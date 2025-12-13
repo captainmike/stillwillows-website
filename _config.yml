@@ -2,8 +2,8 @@ title: Still Willows
 description: Grounded, human-centered mental wellness coaching for small teams. Less stress, more balance, healthier culture.
 tagline: "Grounded · Resilient · Supported"
 email: hello@stillwillows.com
-url: ""
-baseurl: ""
+url: "https://captainmike.github.io"
+baseurl: "/stillwillows-website"
 
 # Build settings
 markdown: kramdown
