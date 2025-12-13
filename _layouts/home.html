@@ -2,45 +2,239 @@
 layout: default
 ---
 
+<!-- Hero -->
 <section class="hero">
   <div class="hero-content">
-    <h1 class="hero-title">{{ site.title }}</h1>
-    <p class="hero-subtitle">{{ site.description }}</p>
+    <div class="hero-tagline">
+      <span>Grounded</span>
+      <span>Resilient</span>
+      <span>Supported</span>
+    </div>
+    <h1>Grounded support for healthier, more resilient teams.</h1>
+    <p class="hero-description">
+      Mental wellness coaching designed for small businesses that want less stress, more balance, and a team that feels genuinely supported — without complicated programs or corporate jargon.
+    </p>
     <div class="hero-cta">
-      <a href="{{ '/about' | relative_url }}" class="btn btn-primary">Learn More</a>
-      <a href="{{ '/contact' | relative_url }}" class="btn btn-secondary">Get in Touch</a>
+      <a href="{{ '/contact' | relative_url }}" class="btn">
+        Book a Free 20-Minute Consultation
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <span class="hero-cta-note">No pressure. Just a conversation.</span>
     </div>
   </div>
-  <div class="organic-shape hero-shape-1"></div>
-  <div class="organic-shape hero-shape-2"></div>
 </section>
 
-<section class="intro">
+<!-- How It Works -->
+<section class="how-it-works">
   <div class="container">
-    {{ content }}
+    <div class="section-header">
+      <h2>How It Works</h2>
+      <p>Getting started is simple.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step">
+        <div class="step-number">1</div>
+        <h3>Book a Consultation</h3>
+        <p>Schedule a free 20-minute call to discuss your team's needs and challenges.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <h3>Choose Your Plan</h3>
+        <p>Select a package that fits your team size. Plans are flexible and can grow with you.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <h3>Start Supporting Your Team</h3>
+        <p>Employees get private booking links and can begin scheduling sessions right away.</p>
+      </div>
+    </div>
   </div>
 </section>
 
-{% if site.posts.size > 0 %}
-<section class="recent-posts">
+<!-- About Preview -->
+<section class="about-preview">
   <div class="container">
-    <h2 class="section-title">Latest Updates</h2>
-    <div class="posts-grid">
-      {% for post in site.posts limit:3 %}
-      <article class="post-card">
-        <div class="post-card-content">
-          <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}">
-            {{ post.date | date: "%B %d, %Y" }}
-          </time>
-          <h3 class="post-title">
-            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-          </h3>
-          <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 120 }}</p>
-          <a href="{{ post.url | relative_url }}" class="read-more">Read more</a>
+    <div class="about-grid">
+      <div class="about-image-frame">
+        <span class="image-placeholder">R</span>
+      </div>
+      <div class="about-content">
+        <h2>About Still Willows</h2>
+        <p>Workplaces are made of humans — and humans need softness, steadiness, and support to do their best work.</p>
+        <p>I'm Rizqa Armien, a mental wellness coach with a background in Occupational Therapy, Public Health (MPH), and online counselling. Through Still Willows, I support small teams who want to prioritise mental wellness in a way that's simple, genuine, and sustainable.</p>
+        <div class="about-highlight">
+          <span>No generic wellness apps.</span>
+          <span>No complicated HR processes.</span>
+          <span>Just grounded, personalised support for real people.</span>
         </div>
-      </article>
-      {% endfor %}
+        <a href="{{ '/about' | relative_url }}" class="link-arrow">
+          Learn more about our approach
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
     </div>
   </div>
 </section>
-{% endif %}
+
+<!-- Services Overview -->
+<section class="services">
+  <div class="container">
+    <div class="section-header">
+      <h2>How We Support Your Team</h2>
+      <p>Flexible, human-centred wellbeing support.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+        <h3>1:1 Wellbeing Coaching</h3>
+        <p>Private, confidential sessions for employees working through stress, emotional regulation, work-life balance, and burnout prevention.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Team Workshops</h3>
+        <p>Short, practical sessions covering stress management, building resilience, navigating change, and healthy habits for busy people.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        </div>
+        <h3>Reporting & Insights</h3>
+        <p>High-level, non-clinical feedback on themes we're noticing — so leaders can make informed decisions without breaching privacy.</p>
+      </div>
+    </div>
+    <div class="services-link">
+      <a href="{{ '/services' | relative_url }}" class="link-arrow">
+        View all services & pricing
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials">
+  <div class="container">
+    <div class="section-header">
+      <h2>What Teams Are Saying</h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <p class="testimonial-quote">"Our team finally has somewhere to turn when work gets overwhelming. The difference in morale has been noticeable within weeks."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">S</div>
+          <div class="testimonial-info">
+            <div class="testimonial-name">Sarah M.</div>
+            <div class="testimonial-role">Founder, Creative Agency</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-quote">"Rizqa's approach is exactly what we needed — no corporate jargon, just genuine support. Our team actually uses this, unlike our old EAP."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">J</div>
+          <div class="testimonial-info">
+            <div class="testimonial-name">James T.</div>
+            <div class="testimonial-role">COO, Tech Startup</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Packages -->
+<section class="packages">
+  <div class="container">
+    <div class="section-header">
+      <h2>Packages & Pricing</h2>
+      <p>Designed for teams of 10–75. Custom plans available.</p>
+    </div>
+    <div class="packages-grid">
+      <div class="package-card">
+        <div class="package-name">Starter</div>
+        <div class="package-for">For teams of 10–20</div>
+        <div class="package-price">$850<span>/month</span></div>
+        <ul class="package-features">
+          <li>10 hours of 1:1 coaching</li>
+          <li>1 monthly workshop</li>
+          <li>Monthly founder/HR check-in</li>
+        </ul>
+        <a href="{{ '/contact' | relative_url }}" class="btn btn-outline">Get Started</a>
+      </div>
+      <div class="package-card featured">
+        <span class="package-badge">Most Popular</span>
+        <div class="package-name">Growth</div>
+        <div class="package-for">For teams of 20–40</div>
+        <div class="package-price">$1,800<span>/month</span></div>
+        <ul class="package-features">
+          <li>24 hours of 1:1 coaching</li>
+          <li>2 workshops or 4 wellness breaks</li>
+          <li>Leadership coaching</li>
+          <li>Monthly utilisation report</li>
+        </ul>
+        <a href="{{ '/contact' | relative_url }}" class="btn">Get Started</a>
+      </div>
+      <div class="package-card">
+        <div class="package-name">Partnership</div>
+        <div class="package-for">For teams of 40–75</div>
+        <div class="package-price">$3,200<span>/month</span></div>
+        <ul class="package-features">
+          <li>45 hours of 1:1 coaching</li>
+          <li>Weekly group sessions</li>
+          <li>Leadership development programme</li>
+          <li>Custom wellbeing resources</li>
+          <li>On-call support</li>
+        </ul>
+        <a href="{{ '/contact' | relative_url }}" class="btn btn-outline">Get Started</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Still Willows -->
+<section class="difference">
+  <div class="container">
+    <div class="section-header">
+      <h2>Why Still Willows?</h2>
+    </div>
+    <div class="difference-grid">
+      <div class="diff-item">
+        <div class="diff-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+        <h3>Human-first support</h3>
+        <p>No apps or chatbots. Real conversations with someone who genuinely cares.</p>
+      </div>
+      <div class="diff-item">
+        <div class="diff-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+        </div>
+        <h3>Accessible pricing</h3>
+        <p>4–8x more support than typical US coaching programs at a sustainable cost.</p>
+      </div>
+      <div class="diff-item">
+        <div class="diff-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <h3>Built for remote teams</h3>
+        <p>Your team can access support from anywhere, on their schedule.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="cta-content">
+    <h2>Let's talk about your team.</h2>
+    <p>Book a free 20-minute consultation to discuss your team, your challenges, and what support could look like.</p>
+    <a href="{{ '/contact' | relative_url }}" class="btn btn-light">
+      Schedule a Conversation
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</section>

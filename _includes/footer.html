@@ -1,33 +1,46 @@
 <footer class="site-footer">
-  <div class="footer-container">
-    <div class="footer-content">
-      <div class="footer-brand">
-        <span class="footer-logo">{{ site.title }}</span>
-        <p class="footer-tagline">{{ site.description }}</p>
-      </div>
-
-      <div class="footer-links">
-        <h4>Navigate</h4>
-        <ul>
-          <li><a href="{{ '/' | relative_url }}">Home</a></li>
-          <li><a href="{{ '/about' | relative_url }}">About</a></li>
-          <li><a href="{{ '/contact' | relative_url }}">Contact</a></li>
-        </ul>
-      </div>
+  <div class="footer-content">
+    <div class="footer-brand">
+      <a href="{{ '/' | relative_url }}" class="logo">{{ site.title }}</a>
+      <div class="footer-tagline">{{ site.tagline }}</div>
     </div>
-
-    <div class="footer-bottom">
-      <p>&copy; {{ 'now' | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
+    <div class="footer-col">
+      <h4>Navigate</h4>
+      <a href="{{ '/about' | relative_url }}">About</a>
+      <a href="{{ '/services' | relative_url }}">Services</a>
+      <a href="{{ '/faq' | relative_url }}">FAQ</a>
+      <a href="{{ '/contact' | relative_url }}">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <a href="{{ '/services' | relative_url }}#coaching">1:1 Coaching</a>
+      <a href="{{ '/services' | relative_url }}#workshops">Workshops</a>
+      <a href="{{ '/services' | relative_url }}#packages">Packages</a>
+      <a href="{{ '/services' | relative_url }}#individuals">For Individuals</a>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+      <a href="{{ '/contact' | relative_url }}">Book a Consultation</a>
     </div>
   </div>
-
-  <div class="organic-shape footer-shape"></div>
+  <div class="footer-bottom">
+    <span>&copy; {{ 'now' | date: '%Y' }} {{ site.title }}. All rights reserved.</span>
+    <div>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+  </div>
 </footer>
 
 <script>
   // Mobile nav toggle
-  document.querySelector('.nav-toggle').addEventListener('click', function() {
-    document.querySelector('.nav-links').classList.toggle('active');
-    this.classList.toggle('active');
-  });
+  const mobileToggle = document.querySelector('.mobile-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  if (mobileToggle && navLinks) {
+    mobileToggle.addEventListener('click', function() {
+      navLinks.classList.toggle('active');
+      this.classList.toggle('active');
+    });
+  }
 </script>
