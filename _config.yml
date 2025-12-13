@@ -1,3 +1,14 @@
 title: Still Willows
-description: A simple Jekyll site
-theme: minima
+description: A peaceful retreat in nature
+url: ""
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md

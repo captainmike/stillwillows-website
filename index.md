@@ -2,6 +2,8 @@
 layout: home
 ---
 
-# Welcome to Still Willows
+## Find Your Calm
 
-This is a simple Jekyll site hosted on GitHub Pages.
+Still Willows is a place where time slows down and nature speaks. Here, beneath the gentle sway of willow branches, you'll discover moments of tranquility and connection with the natural world.
+
+Whether you're seeking a peaceful escape, inspiration from nature, or simply a quiet space to reflect, you've found your sanctuary.

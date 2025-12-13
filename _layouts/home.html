@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<section class="hero">
+  <div class="hero-content">
+    <h1 class="hero-title">{{ site.title }}</h1>
+    <p class="hero-subtitle">{{ site.description }}</p>
+    <div class="hero-cta">
+      <a href="{{ '/about' | relative_url }}" class="btn btn-primary">Learn More</a>
+      <a href="{{ '/contact' | relative_url }}" class="btn btn-secondary">Get in Touch</a>
+    </div>
+  </div>
+  <div class="organic-shape hero-shape-1"></div>
+  <div class="organic-shape hero-shape-2"></div>
+</section>
+
+<section class="intro">
+  <div class="container">
+    {{ content }}
+  </div>
+</section>
+
+{% if site.posts.size > 0 %}
+<section class="recent-posts">
+  <div class="container">
+    <h2 class="section-title">Latest Updates</h2>
+    <div class="posts-grid">
+      {% for post in site.posts limit:3 %}
+      <article class="post-card">
+        <div class="post-card-content">
+          <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}">
+            {{ post.date | date: "%B %d, %Y" }}
+          </time>
+          <h3 class="post-title">
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          </h3>
+          <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 120 }}</p>
+          <a href="{{ post.url | relative_url }}" class="read-more">Read more</a>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
