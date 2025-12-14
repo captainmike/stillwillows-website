@@ -370,7 +370,12 @@ section {
   justify-content: center;
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.25rem;
+  line-height: 1;
   margin: 0 auto 1.25rem;
+}
+
+.step:nth-child(3) .step-number {
+  padding-bottom: 4px;
 }
 
 .step h3 {
