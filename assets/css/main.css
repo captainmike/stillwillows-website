@@ -135,6 +135,10 @@ a {
   color: var(--sage);
 }
 
+.nav-links .btn {
+  color: white;
+}
+
 .mobile-toggle {
   display: none;
   flex-direction: column;
