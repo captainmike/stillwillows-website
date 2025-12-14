@@ -1,7 +1,10 @@
 <footer class="site-footer">
   <div class="footer-content">
     <div class="footer-brand">
-      <a href="{{ '/' | relative_url }}" class="logo">{{ site.title }}</a>
+      <a href="{{ '/' | relative_url }}" class="logo">
+        <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="{{ site.title }}" class="logo-img">
+        {{ site.title }}
+      </a>
       <div class="footer-tagline">{{ site.tagline }}</div>
     </div>
     <div class="footer-col">
