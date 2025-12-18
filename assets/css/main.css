@@ -929,6 +929,16 @@ section {
   margin-bottom: 0.5rem;
 }
 
+.page-content a,
+.post-content a {
+  color: var(--sage);
+}
+
+.page-content a:hover,
+.post-content a:hover {
+  color: var(--sage-dark);
+}
+
 .page-content h2,
 .post-content h2 {
   color: var(--charcoal);
