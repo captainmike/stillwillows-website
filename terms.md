@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Still Willows – Terms of Service
+title: Still Willows Terms of Service
 subtitle: Please read these terms carefully before using our services.
 ---
 
@@ -29,7 +29,7 @@ Services do not involve diagnosis, treatment, or mental health care and are not 
 
 Clients remain responsible for their own decisions, actions, and outcomes.
 
-No therapist–client or doctor–patient relationship is created.
+No therapist-client or doctor-patient relationship is created.
 
 ## 5. Eligibility
 
