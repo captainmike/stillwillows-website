@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Still Willows Terms of Service
+title: Terms of Service
 subtitle: Please read these terms carefully before using our services.
 ---
 
