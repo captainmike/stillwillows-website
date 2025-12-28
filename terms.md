@@ -1,77 +1,68 @@
 ---
 layout: page
-title: Terms of Service
+title: Still Willows – Terms of Service
 subtitle: Please read these terms carefully before using our services.
 ---
 
-*Last updated: 16 December 2025*
-
-These Terms of Service govern your use of the Still Willows website and services. By accessing this website or engaging our services, you agree to these terms.
+*Last updated: 16/12/2025*
 
 ## 1. Nature of Services
 
-Still Willows provides **mental wellness coaching, wellbeing education, and preventative workplace support services**.
+Still Willows provides mental wellness coaching, wellbeing education, and preventative workplace support services.
 
-Our services are non-clinical and are designed to support self-awareness, resilience, and healthy work practices.
+Services are non-clinical and support self-awareness, resilience, and healthy work practices.
 
-### 1.1 Service Scope and Boundaries
+## 2. Service Scope & Boundaries
 
-Still Willows provides structured mental wellness coaching and organisational support during agreed sessions and scheduled communications. Services do not include on-demand availability, crisis response, or continuous access outside of scheduled appointments.
+Services are delivered during scheduled sessions only.
 
-Employees or individuals requiring urgent or clinical mental health support will be encouraged to seek appropriate emergency or professional services.
+Still Willows does not provide:
+- Crisis or emergency support
+- On-demand availability
+- Continuous monitoring outside sessions
 
-## 2. Not Medical or Mental Health Care
+## 3. Not Medical or Mental Health Care
 
-Still Willows does not provide medical, psychological, psychiatric, or therapeutic treatment.
+Services do not involve diagnosis, treatment, or mental health care and are not a substitute for therapy or medical services.
 
-We do not diagnose, treat, or manage mental health conditions. Our services are not a substitute for medical or mental health care.
+## 4. Client Responsibility
 
-If you require clinical treatment or emergency support, you should seek assistance from a licensed healthcare provider or emergency services.
+Clients remain responsible for their own decisions, actions, and outcomes.
 
-## 3. Client Responsibility
+No therapist–client or doctor–patient relationship is created.
 
-Clients remain responsible for their own wellbeing decisions, actions, and outcomes during and after sessions.
+## 5. Eligibility
 
-Participation in services does not create a therapist–client or doctor–patient relationship.
+Services are for adults aged 18 years and older.
 
-## 4. Eligibility
+## 6. Bookings, Payments & Cancellations
 
-Our services are intended for adults aged **18 years and older**.
+Terms relating to bookings, cancellations, fees, and refunds are communicated at the time of booking.
 
-## 5. Booking, Cancellations, and Payments
+## 7. Confidentiality
 
-Booking, rescheduling, cancellation, and payment terms (including notice periods, fees, and refund policies) will be clearly communicated at the time of booking.
+Information shared is treated confidentially, subject to legal and ethical obligations.
 
-## 6. Confidentiality and Limits
+## 8. Organisational Disclaimer
 
-Information shared during services is treated confidentially, subject to legal and ethical obligations.
+Still Willows is not responsible for employer decisions or actions taken based on general wellbeing insights or educational content.
 
-Confidentiality may be breached where required by law or where there is a serious and immediate risk of harm to the client or others.
+## 9. Intellectual Property
 
-## 7. Organisational Services Disclaimer
+All materials remain the intellectual property of Still Willows unless otherwise stated.
 
-For workplace or organisational engagements, Still Willows is not responsible for decisions, actions, or outcomes implemented by employers based on general wellbeing insights or educational content.
+## 10. Limitation of Liability
 
-## 8. Intellectual Property
+To the fullest extent permitted by law, Still Willows is not liable for indirect or consequential losses arising from use of services or the website.
 
-All content on this website, including text, materials, and resources, is the intellectual property of Still Willows unless otherwise stated.
+## 11. Third-Party Links
 
-Content may not be copied, reproduced, or distributed without prior written permission.
+External links are provided for convenience. Still Willows is not responsible for third-party content or practices.
 
-## 9. Limitation of Liability
+## 12. Governing Law
 
-To the fullest extent permitted by law, Still Willows is not liable for any indirect, incidental, or consequential loss or damages arising from the use of our services or website.
+These terms are governed by the laws applicable to the jurisdictions in which Still Willows operates.
 
-## 10. Third-Party Links
-
-This website may contain links to third-party websites. Still Willows is not responsible for the content, policies, or practices of external sites.
-
-## 11. Governing Law
-
-These Terms of Service are governed by and interpreted in accordance with the laws applicable to the jurisdictions in which Still Willows operates.
-
-## 12. Contact
-
-Questions about these terms may be directed to:
+## 13. Contact
 
 **Email:** [hello@stillwillows.com](mailto:hello@stillwillows.com)
