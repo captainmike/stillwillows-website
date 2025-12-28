@@ -154,44 +154,7 @@ layout: default
       <h2>Packages & Pricing</h2>
       <p>Designed for teams of 10–75. Custom plans available.</p>
     </div>
-    <div class="packages-grid">
-      <div class="package-card">
-        <div class="package-name">Starter</div>
-        <div class="package-for">For teams of 10–20</div>
-        <div class="package-price">$795<span>/month</span></div>
-        <ul class="package-features">
-          <li>8 hours of 1:1 coaching</li>
-          <li>Monthly utilisation report</li>
-          <li>Quarterly alignment check-in</li>
-        </ul>
-        <a href="{{ '/contact' | relative_url }}" class="btn btn-outline">Get Started</a>
-      </div>
-      <div class="package-card featured">
-        <span class="package-badge">Most Popular</span>
-        <div class="package-name">Growth</div>
-        <div class="package-for">For teams of 20–40</div>
-        <div class="package-price">$1,695<span>/month</span></div>
-        <ul class="package-features">
-          <li>20 hours of 1:1 coaching</li>
-          <li>Quarterly workshop</li>
-          <li>Monthly utilisation report</li>
-          <li>Quarterly alignment check-in</li>
-        </ul>
-        <a href="{{ '/contact' | relative_url }}" class="btn">Get Started</a>
-      </div>
-      <div class="package-card">
-        <div class="package-name">Partnership</div>
-        <div class="package-for">For teams of 40–75</div>
-        <div class="package-price">$3,050<span>/month</span></div>
-        <ul class="package-features">
-          <li>36 hours of 1:1 coaching</li>
-          <li>Quarterly workshop</li>
-          <li>Monthly utilisation report</li>
-          <li>Dedicated account coordination</li>
-        </ul>
-        <a href="{{ '/contact' | relative_url }}" class="btn btn-outline">Get Started</a>
-      </div>
-    </div>
+    {% include packages-grid.html %}
   </div>
 </section>
 
