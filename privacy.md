@@ -6,7 +6,7 @@ subtitle: How we collect, use, and protect your information.
 
 *Last updated: 16/12/2025*
 
-Still Willows is committed to protecting your privacy and handling personal information in a lawful, fair, and transparent manner.
+Still Willows LLC is committed to protecting your privacy and handling personal information in a lawful, fair, and transparent manner.
 
 ## 1. Information We Collect
 
@@ -14,7 +14,7 @@ We may collect:
 - Contact details (name, email address, organisation)
 - Booking and scheduling information
 - Session-related notes (minimal, non-clinical)
-- Communications sent to or from Still Willows
+- Communications sent to or from Still Willows LLC
 - Website usage data (cookies, analytics)
 
 In some cases, we may also collect limited sensitive personal information, such as health-related information or medication details, where voluntarily provided and reasonably necessary for coaching suitability, safety planning, or continuity of service.

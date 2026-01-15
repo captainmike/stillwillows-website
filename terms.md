@@ -8,7 +8,7 @@ subtitle: Please read these terms carefully before using our services.
 
 ## 1. Nature of Services
 
-Still Willows provides mental wellness coaching, wellbeing education, and preventative workplace support services.
+Still Willows LLC provides mental wellness coaching, wellbeing education, and preventative workplace support services.
 
 Services are non-clinical and support self-awareness, resilience, and healthy work practices.
 
@@ -16,7 +16,7 @@ Services are non-clinical and support self-awareness, resilience, and healthy wo
 
 Services are delivered during scheduled sessions only.
 
-Still Willows does not provide:
+Still Willows LLC does not provide:
 - Crisis or emergency support
 - On-demand availability
 - Continuous monitoring outside sessions
@@ -45,23 +45,23 @@ Information shared is treated confidentially, subject to legal and ethical oblig
 
 ## 8. Organisational Disclaimer
 
-Still Willows is not responsible for employer decisions or actions taken based on general wellbeing insights or educational content.
+Still Willows LLC is not responsible for employer decisions or actions taken based on general wellbeing insights or educational content.
 
 ## 9. Intellectual Property
 
-All materials remain the intellectual property of Still Willows unless otherwise stated.
+All materials remain the intellectual property of Still Willows LLC unless otherwise stated.
 
 ## 10. Limitation of Liability
 
-To the fullest extent permitted by law, Still Willows is not liable for indirect or consequential losses arising from use of services or the website.
+To the fullest extent permitted by law, Still Willows LLC is not liable for indirect or consequential losses arising from use of services or the website.
 
 ## 11. Third-Party Links
 
-External links are provided for convenience. Still Willows is not responsible for third-party content or practices.
+External links are provided for convenience. Still Willows LLC is not responsible for third-party content or practices.
 
 ## 12. Governing Law
 
-These terms are governed by the laws applicable to the jurisdictions in which Still Willows operates.
+These terms are governed by the laws applicable to the jurisdictions in which Still Willows LLC operates.
 
 ## 13. Contact
 
