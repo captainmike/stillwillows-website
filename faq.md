@@ -1,4 +1,4 @@
 ---
 layout: faq
-title: FAQ
+title: Frequently Asked Questions About Our Approach
 ---

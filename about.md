@@ -1,4 +1,4 @@
 ---
 layout: about
-title: About
+title: Meet Your Mental Wellness Coach
 ---

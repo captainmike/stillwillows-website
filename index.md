@@ -1,4 +1,4 @@
 ---
 layout: home
-title: Mental Wellness Coaching for Teams
+title: Team Mental Health Support & Wellness Coaching
 ---

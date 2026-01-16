@@ -1,4 +1,4 @@
 ---
 layout: contact
-title: Contact
+title: Contact | Book a Consultation
 ---

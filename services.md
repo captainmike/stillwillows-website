@@ -1,4 +1,4 @@
 ---
 layout: services
-title: Services & Packages
+title: Mental Wellness Coaching Services & Packages
 ---
