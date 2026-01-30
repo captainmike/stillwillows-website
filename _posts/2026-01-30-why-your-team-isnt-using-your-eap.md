@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Why Your Team Isn't Using Your EAP (And What Actually Helps)"
-date: 2025-01-15
+date: 2026-01-30
 excerpt: "You did the right thing. You set up an Employee Assistance Program because you genuinely care about your team's wellbeing. You announced it, maybe even sent a reminder or two. And then... almost no one used it."
 ---
 
