@@ -1620,17 +1620,25 @@ section {
 /* ========================================
    Blog Page - Listing
    ======================================== */
+.blog-page-header {
+  padding-bottom: 3rem;
+}
+
+.blog-page-header h1 {
+  margin-bottom: 2rem;
+}
+
 .blog-section {
-  padding: 4rem 5% 6rem;
+  padding: 0 5% 6rem;
   max-width: 800px;
   margin: 0 auto;
 }
 
-/* Author intro */
+/* Author intro in header */
 .blog-author-intro {
-  margin-bottom: 3rem;
-  padding-bottom: 2.5rem;
-  border-bottom: 1px solid var(--sage-pale);
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .blog-author-label {
@@ -1645,14 +1653,14 @@ section {
 
 .blog-author-name {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 600;
   color: var(--charcoal);
   margin-bottom: 1rem;
 }
 
 .blog-author-bio {
-  font-size: 1.05rem;
+  font-size: 1rem;
   line-height: 1.8;
   color: var(--charcoal-soft);
   font-style: italic;
