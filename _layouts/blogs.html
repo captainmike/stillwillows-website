@@ -8,37 +8,41 @@ layout: default
 </header>
 
 <section class="blog-section">
-  <!-- Add new blog posts here. Most recent at the top. -->
+  <div class="blog-list">
+    <!-- Add new blog posts here. Most recent at the top. -->
 
-  <div class="blog-item">
-    <button class="blog-title">
-      <div class="blog-title-text">
-        <span class="blog-heading">Welcome to the Still Willows Blog</span>
-        <span class="blog-date">January 2025</span>
+    <article class="blog-card">
+      <header class="blog-card-header">
+        <time class="blog-card-date" datetime="2025-01">January 2025</time>
+        <h2 class="blog-card-title">Welcome to the Still Willows Blog</h2>
+        <p class="blog-card-excerpt">Welcome to the Still Willows blog. This is a space where I will be sharing thoughts, insights, and practical strategies around mental wellness, resilience, and sustainable wellbeing.</p>
+      </header>
+      <button class="blog-read-more" aria-expanded="false">
+        <span class="blog-read-more-text">Read more</span>
+        <svg class="blog-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </button>
+      <div class="blog-card-content" aria-hidden="true">
+        <div class="blog-card-body">
+          <p>Whether you are part of a team looking to support employee wellness, or an individual navigating the challenges of modern work and life, I hope you will find something useful here.</p>
+          <p>Topics I plan to explore include:</p>
+          <ul>
+            <li>Managing stress in demanding environments</li>
+            <li>Building resilience without burning out</li>
+            <li>Creating healthy boundaries at work</li>
+            <li>Navigating change and uncertainty</li>
+            <li>Simple habits that make a real difference</li>
+          </ul>
+          <p>I believe that small, consistent steps lead to meaningful change. My goal is to share accessible, evidence-informed approaches that you can actually apply in your daily life.</p>
+          <p>Stay tuned for more posts, and feel free to reach out if there are topics you would like me to cover.</p>
+        </div>
       </div>
-      <span class="blog-icon"></span>
-    </button>
-    <div class="blog-content">
-      <div class="blog-content-inner">
-        <p>Welcome to the Still Willows blog. This is a space where I will be sharing thoughts, insights, and practical strategies around mental wellness, resilience, and sustainable wellbeing.</p>
-        <p>Whether you are part of a team looking to support employee wellness, or an individual navigating the challenges of modern work and life, I hope you will find something useful here.</p>
-        <p>Topics I plan to explore include:</p>
-        <ul>
-          <li>Managing stress in demanding environments</li>
-          <li>Building resilience without burning out</li>
-          <li>Creating healthy boundaries at work</li>
-          <li>Navigating change and uncertainty</li>
-          <li>Simple habits that make a real difference</li>
-        </ul>
-        <p>I believe that small, consistent steps lead to meaningful change. My goal is to share accessible, evidence-informed approaches that you can actually apply in your daily life.</p>
-        <p>Stay tuned for more posts, and feel free to reach out if there are topics you would like me to cover.</p>
-      </div>
-    </div>
+    </article>
+
   </div>
-
 </section>
 
-<!-- CTA -->
 <section class="cta">
   <h2>Want to talk?</h2>
   <p>Book a free discovery call to discuss how coaching can support you or your team.</p>
@@ -49,16 +53,19 @@ layout: default
 </section>
 
 <script>
-  document.querySelectorAll('.blog-title').forEach(button => {
+  document.querySelectorAll('.blog-read-more').forEach(button => {
     button.addEventListener('click', () => {
-      const item = button.parentElement;
-      const wasOpen = item.classList.contains('open');
+      const card = button.closest('.blog-card');
+      const content = card.querySelector('.blog-card-content');
+      const isExpanded = button.getAttribute('aria-expanded') === 'true';
 
-      // Close all blog items
-      document.querySelectorAll('.blog-item').forEach(i => i.classList.remove('open'));
+      // Toggle state
+      button.setAttribute('aria-expanded', !isExpanded);
+      content.setAttribute('aria-hidden', isExpanded);
+      card.classList.toggle('expanded');
 
-      // Open clicked if wasn't open
-      if (!wasOpen) item.classList.add('open');
+      // Update button text
+      button.querySelector('.blog-read-more-text').textContent = isExpanded ? 'Read more' : 'Read less';
     });
   });
 </script>
