@@ -8,37 +8,126 @@ layout: default
 </header>
 
 <section class="blog-section">
-  <!-- Add new blog posts here. Most recent at the top. -->
+  <div class="blog-list">
 
-  <div class="blog-item">
-    <button class="blog-title">
-      <div class="blog-title-text">
-        <span class="blog-heading">Welcome to the Still Willows Blog</span>
-        <span class="blog-date">January 2025</span>
+    <!-- Pinned welcome post -->
+    <article class="blog-card blog-card-pinned">
+      <header class="blog-card-header">
+        <h2 class="blog-card-title">Welcome to the Still Willows Blog</h2>
+        <p class="blog-card-excerpt">This is a space for honest conversations about mental wellness at work. Whether you are a founder wondering how to support your team, an HR leader evaluating wellbeing benefits, or someone navigating the pressures of modern work, I hope you will find something useful here.</p>
+      </header>
+      <button class="blog-read-more" aria-expanded="false">
+        <span class="blog-read-more-text">Read more</span>
+        <svg class="blog-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </button>
+      <div class="blog-card-content" aria-hidden="true">
+        <div class="blog-card-body">
+          <p>I write about the things I see in my work as a mental wellness coach: why wellbeing programmes often go unused, how to spot burnout before it becomes a crisis, and what actually helps people feel supported without overstepping.</p>
+          <p>Topics I explore include:</p>
+          <ul>
+            <li>Why traditional employee assistance programmes fall short</li>
+            <li>Recognising the early signs of burnout in your team</li>
+            <li>The difference between coaching and therapy</li>
+            <li>Building resilience without glorifying "pushing through"</li>
+            <li>Supporting your team's mental health as a leader</li>
+            <li>Creating wellbeing benefits people will actually use</li>
+          </ul>
+          <p>My goal is to share accessible, evidence-informed perspectives that challenge conventional thinking and offer practical guidance you can actually apply.</p>
+          <p>If there are topics you would like me to cover, feel free to <a href="{{ '/contact' | relative_url }}">reach out</a>.</p>
+        </div>
       </div>
-      <span class="blog-icon"></span>
-    </button>
-    <div class="blog-content">
-      <div class="blog-content-inner">
-        <p>Welcome to the Still Willows blog. This is a space where I will be sharing thoughts, insights, and practical strategies around mental wellness, resilience, and sustainable wellbeing.</p>
-        <p>Whether you are part of a team looking to support employee wellness, or an individual navigating the challenges of modern work and life, I hope you will find something useful here.</p>
-        <p>Topics I plan to explore include:</p>
-        <ul>
-          <li>Managing stress in demanding environments</li>
-          <li>Building resilience without burning out</li>
-          <li>Creating healthy boundaries at work</li>
-          <li>Navigating change and uncertainty</li>
-          <li>Simple habits that make a real difference</li>
-        </ul>
-        <p>I believe that small, consistent steps lead to meaningful change. My goal is to share accessible, evidence-informed approaches that you can actually apply in your daily life.</p>
-        <p>Stay tuned for more posts, and feel free to reach out if there are topics you would like me to cover.</p>
+    </article>
+
+    <!-- Add new blog posts below. Most recent first. -->
+
+    <article class="blog-card">
+      <header class="blog-card-header">
+        <time class="blog-card-date" datetime="2025-01">January 2025</time>
+        <h2 class="blog-card-title">Why Your Team Isn't Using Your EAP (And What Actually Helps)</h2>
+        <p class="blog-card-excerpt">You did the right thing. You set up an Employee Assistance Program because you genuinely care about your team's wellbeing. You announced it, maybe even sent a reminder or two. And then... almost no one used it.</p>
+      </header>
+      <button class="blog-read-more" aria-expanded="false">
+        <span class="blog-read-more-text">Read more</span>
+        <svg class="blog-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </button>
+      <div class="blog-card-content" aria-hidden="true">
+        <div class="blog-card-body">
+          <p>You're not alone. EAP utilisation rates typically hover between 4 and 10 percent across most organisations, with some studies showing rates as low as 1 to 2 percent.<sup>1</sup> That means the vast majority of employees who could access free mental health support simply don't.</p>
+          <p>As someone who works in mental wellness, and as someone who has personally used an EAP, I've seen both sides of this problem. I think it's worth having an honest reflection on why these programmes, despite good intentions, often fail the very people they are meant to help.</p>
+
+          <h3>The Stigma Is Still Real</h3>
+          <p>Let's start with the obvious. There is still significant stigma around seeking mental health support, especially at work.</p>
+          <p>The numbers back this up. Research shows that 67 percent of managers report stigma exists in their workplace around stress, anxiety, and mental health issues.<sup>2</sup> And it is not just perception. Employees are picking up on real attitudes. Studies have found that between 67 and 81 percent of CEOs, HR leaders, and employees agree that companies view someone with mental health issues as weak or a burden.</p>
+          <p>Even when employees intellectually know that struggling is normal, that stress, anxiety, and burnout are incredibly common, there is often a gap between knowing that and feeling safe enough to pick up the phone and call a number their employer provided.</p>
+          <p>For many people, reaching out feels like an admission of weakness. Like they cannot handle it. Like they are somehow failing at being a professional adult.</p>
+          <p>This is particularly true in high performing environments where people pride themselves on resilience and self sufficiency. The very qualities that make someone excellent at their job can make them the least likely to ask for help.</p>
+
+          <h3>The Privacy Question That Never Goes Away</h3>
+          <p>Here is the concern I hear most often, sometimes spoken directly and sometimes just implied.</p>
+          <p><em>Will my employer know I used this?</em></p>
+          <p>Officially, no. EAPs are confidential. But that official answer does not always land the way it should.</p>
+          <p>The fear is widespread and not irrational. Research from the American Psychological Association found that 39 percent of workers worry that disclosing a mental health condition to their employer would negatively impact them at work. Among workers who already feel psychologically unsafe, that number climbs to 57 percent.<sup>3</sup></p>
+          <p>When the service is provided by your employer, paid for by your employer, and promoted by your employer, there is often a lingering doubt. Even if that doubt is not technically justified, it is real. And when someone is already feeling vulnerable, that doubt is often enough to stop them from reaching out altogether.</p>
+          <p>I have spoken with people who genuinely needed support but chose to struggle alone rather than risk, even theoretically, their employer knowing they were going through something. That is not a failure of the individual. That is a failure of the system to build enough trust.</p>
+
+          <h3>The Pressure to Resolve Things Quickly</h3>
+          <p>This one is harder to talk about, but it matters.</p>
+          <p>EAPs typically offer a limited number of sessions, often between three and eight. That is the model. And within that model, there can be an unspoken pressure to move quickly, reach resolution, and wrap things up.</p>
+          <p>Here is the problem. Research suggests that most people need between 15 and 20 sessions for symptoms to meaningfully improve.<sup>1</sup> Yet the average EAP delivers just 2.5 counselling sessions per person. The maths simply does not work.</p>
+          <p>I experienced this disconnect myself.</p>
+          <p>I was going through a difficult period and accessed an EAP. My counsellor was professional and well intentioned. But from early on, it was clear we were working toward an endpoint. The sessions felt structured around getting to "done".</p>
+          <p>When we ended our work together, I still had things I wanted to talk about. I still felt there was more to process. But the framing of the work, the implicit message that we needed to finish efficiently and avoid dependency, made me hesitant to ask for more. I did not feel I had permission to need additional support.</p>
+          <p>So I did not ask. And I walked away feeling like I had been through a process rather than actually been helped.</p>
+          <p>I do not share this to criticise my counsellor. I think he was operating within a system that prioritises throughput over outcomes. I share it because I suspect my experience is not unusual, and because it shapes how I think about what meaningful support actually looks like.</p>
+
+          <h3>What People Actually Need</h3>
+          <p>When I think about what would have helped me, and what I now try to offer the teams I work with, a few things consistently come to mind.</p>
+          <p><strong>Enough time.</strong> Not unlimited time, but enough that people do not feel rushed. Enough time to build trust before diving into hard things. Enough that finishing is not the primary goal.</p>
+          <p><strong>Real human connection.</strong> Not a hotline. Not a rotating cast of professionals. Someone who knows your name, remembers what you spoke about last time, and genuinely cares how you are doing.</p>
+          <p><strong>Genuine separation from the employer.</strong> Not just technically confidential, but structured in a way that feels private. With no doubt, no lingering questions, and no reason to hesitate.</p>
+          <p><strong>A focus on sustainable support rather than quick fixes.</strong> The goal is not to discharge someone as fast as possible. It is to help them build skills, habits, and self awareness that support them long after the conversations end.</p>
+
+          <h3>Why Coaching Can Feel More Accessible (When Done Well)</h3>
+          <p>There is another factor worth mentioning. The framing matters.</p>
+          <p>When someone accesses an EAP, they are often doing so because something feels wrong. They are stressed, overwhelmed, or burned out. The act of calling can feel like admitting they have a problem they cannot manage on their own.</p>
+          <p>Coaching is often experienced differently.</p>
+          <p>Coaching is framed around growth rather than pathology. It focuses on navigating challenges, building resilience, and developing sustainable habits. High performers work with coaches. Athletes have coaches. Leaders have coaches. For many people, coaching feels proactive rather than reactive, and that framing alone can lower the barrier to reaching out.</p>
+          <p>For the right client, coaching can be incredibly effective.</p>
+          <p>That said, coaching is not appropriate for everyone or every situation. Some people who reach out for coaching are actually dealing with deeper mental health concerns that require counselling or therapy. A competent and ethical coach needs to be able to recognise this and refer on when necessary.</p>
+          <p>This boundary matters.</p>
+          <p>Coaching should never attempt to replace therapy when therapy is what is needed. Respecting that line is essential, both for client safety and for the integrity of the support being offered. When coaching is delivered responsibly, with clear scope and referral pathways, it can sit alongside clinical support rather than compete with it.</p>
+          <p>For many employees, especially those navigating everyday stress, early burnout, or work life strain, coaching offers support that feels safer, more human, and easier to access. For others, counselling remains the right path. Both have a place, and knowing the difference is key.</p>
+
+          <h3>A Different Approach</h3>
+          <p>This is why I built Still Willows the way I did.</p>
+          <p>The teams I work with receive ongoing access to coaching, not a handful of sessions with a stranger. Employees book directly with me, and I never share who is using the service with their employer. Leadership receives high level, anonymised insights about team wellbeing themes and nothing more.</p>
+          <p>It is not a replacement for therapy when therapy is what is needed. But for everyday stress, creeping burnout, and the "I'm fine but not really fine" that so many people experience at work, it is support that people actually use. Because it feels safe. Because it feels human. Because there is no pressure to wrap things up before someone is ready.</p>
+
+          <h3>If Your EAP Isn't Working</h3>
+          <p>If you have invested in an EAP and utilisation is low, it does not mean your team does not need support. It likely means they do not trust the system enough to access it, or the system is not designed to meet them where they are.</p>
+          <p>That is not a criticism of you for choosing it. It is simply an honest look at why the model often falls short.</p>
+          <p>If you would like to talk about what a different kind of support could look like for your team, I am always happy to have that conversation. No pressure and no pitch, just a real discussion about what your people might actually need.</p>
+          <p><a href="{{ '/contact' | relative_url }}" class="blog-cta-link">Book a free discovery call</a></p>
+
+          <div class="blog-references">
+            <h4>References</h4>
+            <ol>
+              <li>Meditopia. (2025). EAP Statistics and Utilization Rates in 2025. Retrieved from <a href="https://meditopia.com/en/forwork/articles/eap-statistics-and-utilization-rates" target="_blank" rel="noopener">meditopia.com</a></li>
+              <li>Uprise Health. (2024). Five Strategies to Increase EAP Utilization. Retrieved from <a href="https://uprisehealth.com/resources/maximizing-the-impact-of-employee-assistance-programs/" target="_blank" rel="noopener">uprisehealth.com</a></li>
+              <li>American Psychological Association. (2024). 2024 Work in America Survey: Psychological Safety in the Changing Workplace. Retrieved from <a href="https://www.apa.org/pubs/reports/work-in-america/2024" target="_blank" rel="noopener">apa.org</a></li>
+            </ol>
+          </div>
+        </div>
       </div>
-    </div>
+    </article>
+
   </div>
-
 </section>
 
-<!-- CTA -->
 <section class="cta">
   <h2>Want to talk?</h2>
   <p>Book a free discovery call to discuss how coaching can support you or your team.</p>
@@ -49,16 +138,19 @@ layout: default
 </section>
 
 <script>
-  document.querySelectorAll('.blog-title').forEach(button => {
+  document.querySelectorAll('.blog-read-more').forEach(button => {
     button.addEventListener('click', () => {
-      const item = button.parentElement;
-      const wasOpen = item.classList.contains('open');
+      const card = button.closest('.blog-card');
+      const content = card.querySelector('.blog-card-content');
+      const isExpanded = button.getAttribute('aria-expanded') === 'true';
 
-      // Close all blog items
-      document.querySelectorAll('.blog-item').forEach(i => i.classList.remove('open'));
+      // Toggle state
+      button.setAttribute('aria-expanded', !isExpanded);
+      content.setAttribute('aria-hidden', isExpanded);
+      card.classList.toggle('expanded');
 
-      // Open clicked if wasn't open
-      if (!wasOpen) item.classList.add('open');
+      // Update button text
+      button.querySelector('.blog-read-more-text').textContent = isExpanded ? 'Read more' : 'Read less';
     });
   });
 </script>
