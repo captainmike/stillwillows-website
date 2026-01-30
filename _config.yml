@@ -9,6 +9,14 @@ baseurl: ""
 markdown: kramdown
 permalink: pretty
 
+# Blog post URLs
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      permalink: /blogs/:title/
+
 # Exclude from build
 exclude:
   - Gemfile
