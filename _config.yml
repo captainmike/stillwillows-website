@@ -15,7 +15,7 @@ defaults:
       path: ""
       type: "posts"
     values:
-      permalink: /blogs/:title/
+      permalink: /blog/:title/
 
 # Exclude from build
 exclude:
