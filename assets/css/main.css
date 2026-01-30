@@ -1645,6 +1645,15 @@ section {
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
 }
 
+.blog-card-pinned {
+  background: var(--cream-warm);
+  border-color: var(--sage-light);
+}
+
+.blog-card-pinned .blog-card-title {
+  font-size: 1.5rem;
+}
+
 .blog-card-header {
   margin-bottom: 1rem;
 }
@@ -1728,6 +1737,17 @@ section {
 
 .blog-card-body p:last-child {
   margin-bottom: 0;
+}
+
+.blog-card-body a {
+  color: var(--sage);
+  text-decoration: none;
+  border-bottom: 1px solid var(--sage-light);
+  transition: border-color 0.3s ease;
+}
+
+.blog-card-body a:hover {
+  border-color: var(--sage);
 }
 
 .blog-card-body ul {

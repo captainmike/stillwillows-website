@@ -9,7 +9,38 @@ layout: default
 
 <section class="blog-section">
   <div class="blog-list">
-    <!-- Add new blog posts here. Most recent at the top. -->
+
+    <!-- Pinned welcome post -->
+    <article class="blog-card blog-card-pinned">
+      <header class="blog-card-header">
+        <h2 class="blog-card-title">Welcome to the Still Willows Blog</h2>
+        <p class="blog-card-excerpt">This is a space for honest conversations about mental wellness at work. Whether you are a founder wondering how to support your team, an HR leader evaluating wellbeing benefits, or someone navigating the pressures of modern work, I hope you will find something useful here.</p>
+      </header>
+      <button class="blog-read-more" aria-expanded="false">
+        <span class="blog-read-more-text">Read more</span>
+        <svg class="blog-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </button>
+      <div class="blog-card-content" aria-hidden="true">
+        <div class="blog-card-body">
+          <p>I write about the things I see in my work as a mental wellness coach: why wellbeing programmes often go unused, how to spot burnout before it becomes a crisis, and what actually helps people feel supported without overstepping.</p>
+          <p>Topics I explore include:</p>
+          <ul>
+            <li>Why traditional employee assistance programmes fall short</li>
+            <li>Recognising the early signs of burnout in your team</li>
+            <li>The difference between coaching and therapy</li>
+            <li>Building resilience without glorifying "pushing through"</li>
+            <li>Supporting your team's mental health as a leader</li>
+            <li>Creating wellbeing benefits people will actually use</li>
+          </ul>
+          <p>My goal is to share accessible, evidence-informed perspectives that challenge conventional thinking and offer practical guidance you can actually apply.</p>
+          <p>If there are topics you would like me to cover, feel free to <a href="{{ '/contact' | relative_url }}">reach out</a>.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- Add new blog posts below. Most recent first. -->
 
     <article class="blog-card">
       <header class="blog-card-header">
@@ -90,35 +121,6 @@ layout: default
               <li>American Psychological Association. (2024). 2024 Work in America Survey: Psychological Safety in the Changing Workplace. Retrieved from <a href="https://www.apa.org/pubs/reports/work-in-america/2024" target="_blank" rel="noopener">apa.org</a></li>
             </ol>
           </div>
-        </div>
-      </div>
-    </article>
-
-    <article class="blog-card">
-      <header class="blog-card-header">
-        <time class="blog-card-date" datetime="2025-01">January 2025</time>
-        <h2 class="blog-card-title">Welcome to the Still Willows Blog</h2>
-        <p class="blog-card-excerpt">Welcome to the Still Willows blog. This is a space where I will be sharing thoughts, insights, and practical strategies around mental wellness, resilience, and sustainable wellbeing.</p>
-      </header>
-      <button class="blog-read-more" aria-expanded="false">
-        <span class="blog-read-more-text">Read more</span>
-        <svg class="blog-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="6 9 12 15 18 9"></polyline>
-        </svg>
-      </button>
-      <div class="blog-card-content" aria-hidden="true">
-        <div class="blog-card-body">
-          <p>Whether you are part of a team looking to support employee wellness, or an individual navigating the challenges of modern work and life, I hope you will find something useful here.</p>
-          <p>Topics I plan to explore include:</p>
-          <ul>
-            <li>Managing stress in demanding environments</li>
-            <li>Building resilience without burning out</li>
-            <li>Creating healthy boundaries at work</li>
-            <li>Navigating change and uncertainty</li>
-            <li>Simple habits that make a real difference</li>
-          </ul>
-          <p>I believe that small, consistent steps lead to meaningful change. My goal is to share accessible, evidence-informed approaches that you can actually apply in your daily life.</p>
-          <p>Stay tuned for more posts, and feel free to reach out if there are topics you would like me to cover.</p>
         </div>
       </div>
     </article>
