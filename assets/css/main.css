@@ -1698,6 +1698,9 @@ section {
   font-weight: 500;
   color: var(--sage);
   transition: color 0.3s ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .blog-read-more:hover {
@@ -1706,6 +1709,7 @@ section {
 
 .blog-chevron {
   transition: transform 0.3s ease;
+  display: inline-block;
 }
 
 .blog-card.expanded .blog-chevron {
@@ -1716,10 +1720,12 @@ section {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease;
+  visibility: hidden;
 }
 
 .blog-card.expanded .blog-card-content {
-  max-height: 2000px;
+  max-height: 5000px;
+  visibility: visible;
 }
 
 .blog-card-body {
