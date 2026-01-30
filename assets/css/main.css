@@ -1455,6 +1455,7 @@ section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .individuals-topics li {
