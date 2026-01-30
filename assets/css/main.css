@@ -1776,6 +1776,64 @@ section {
   color: var(--charcoal-soft);
 }
 
+.blog-card-body sup {
+  font-size: 0.75em;
+  color: var(--sage);
+}
+
+.blog-cta-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-weight: 500;
+  color: var(--sage);
+  text-decoration: none;
+  border-bottom: 1px solid var(--sage);
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.blog-cta-link:hover {
+  color: var(--sage-dark);
+  border-color: var(--sage-dark);
+}
+
+.blog-references {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--sage-pale);
+}
+
+.blog-references h4 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--sage);
+  margin-bottom: 1rem;
+}
+
+.blog-references ol {
+  list-style: decimal;
+  padding-left: 1.25rem;
+  margin: 0;
+}
+
+.blog-references li {
+  font-size: 0.85rem;
+  color: var(--charcoal-soft);
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.blog-references a {
+  color: var(--sage);
+  text-decoration: none;
+}
+
+.blog-references a:hover {
+  text-decoration: underline;
+}
+
 /* ========================================
    Contact Page
    ======================================== */
