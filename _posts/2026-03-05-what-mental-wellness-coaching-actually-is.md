@@ -82,7 +82,7 @@ A coach asks: "Where are you now, where do you want to be, and what's getting in
 
 Both questions are valuable. But they lead to different kinds of work.
 
-For many people, especially those dealing with the accumulating stress of demanding jobs, coaching is exactly the right fit. They're not in crisis. They don't have a diagnosable condition. They're just... tired. Stretched thin. Losing the plot a little. And they need support to get back on track before things get worse.
+For many people, especially those dealing with the accumulating stress of demanding jobs, coaching is exactly the right fit. They're tired. Stretched thin. Losing the plot a little. And they need support to get back on track before things get worse.
 
 That's prevention. That's what coaching does well.
 
@@ -96,13 +96,17 @@ On one end, there's "fine." Functioning. Getting through the day. No obvious pro
 
 On the other end, there's "crisis." Clinical depression. Burnout so severe it requires medical leave. Anxiety that makes it impossible to work.
 
-But there's a huge space in between. People who aren't fine but aren't in crisis either. People who are struggling but not enough to seek clinical support. People who might benefit from support but don't see themselves as "needing help."
+But there's a huge space in between. People who aren't fine but aren't in crisis either. People who are struggling but not enough to feel like they "qualify" for support. People who might benefit from help but don't see themselves as "needing" it.
 
 **That middle space is where a lot of people live for a long time, sometimes years, before things tip one way or the other.**
 
-Coaching is designed for that space.
+Both therapy and coaching can serve people in this space. I've reached out to a counsellor myself during a stretch like this, not because I was falling apart, but because things were hard and I needed support. That's a valid reason to seek clinical care, and the idea that therapy is only for people in crisis is a myth worth dismantling.
 
-It's support before the breaking point. It's building resilience while you still have capacity to build it. It's noticing that things are harder than they should be and deciding to do something about it, not because you're broken, but because you're paying attention.
+But this space is also where coaching can make a real difference. For many people, especially those dealing with the accumulating stress of demanding jobs, coaching is exactly the right fit. They're not in crisis. They don't have a diagnosable condition. They're just... tired. Stretched thin. Losing the plot a little. And they need support to get back on track before things get worse.
+
+Coaching is designed for that. It's support before the breaking point. It's building resilience while you still have capacity to build it. It's noticing that things are harder than they should be and deciding to do something about it, not because you're broken, but because you're paying attention.
+
+That's prevention. That's what coaching does well.
 
 ---
 
