@@ -100,7 +100,7 @@ But there's a huge space in between. People who aren't fine but aren't in crisis
 
 **That middle space is where a lot of people live for a long time, sometimes years, before things tip one way or the other.**
 
-Both therapy and coaching can serve people in this space. I've reached out to a counsellor myself during a stretch like this, not because I was falling apart, but because things were hard and I needed support. That's a valid reason to seek clinical care, and the idea that therapy is only for people in crisis is a myth worth dismantling.
+Both therapy and coaching can serve people in this space. I've reached out to a counsellor myself during a stretch like this, not because I was falling apart, but because things were hard and I needed support. That's a valid reason to seek clinical care, and the idea that therapy is only for people in crisis is a myth worth dismantling, as I have been reminded by a fellow mental health colleague.
 
 But this space is also where coaching can make a real difference. For many people, especially those dealing with the accumulating stress of demanding jobs, coaching is exactly the right fit. They're not in crisis. They don't have a diagnosable condition. They're just... tired. Stretched thin. Losing the plot a little. And they need support to get back on track before things get worse.
 
