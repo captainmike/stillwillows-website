@@ -82,10 +82,6 @@ A coach asks: "Where are you now, where do you want to be, and what's getting in
 
 Both questions are valuable. But they lead to different kinds of work.
 
-For many people, especially those dealing with the accumulating stress of demanding jobs, coaching is exactly the right fit. They're tired. Stretched thin. Losing the plot a little. And they need support to get back on track before things get worse.
-
-That's prevention. That's what coaching does well.
-
 ---
 
 ## The Space Between "Fine" and "In Crisis"
