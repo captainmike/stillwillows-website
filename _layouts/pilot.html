@@ -21,28 +21,26 @@
 </head>
 <body>
 
-  <nav id="nav" class="site-nav">
-    <a href="{{ '/' | relative_url }}" class="logo">
-      <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="{{ site.title }}" class="logo-img">
-      {{ site.title }}
-    </a>
-  </nav>
-
   <main class="main-content">
 
     <!-- Hero -->
-    <section class="hero pilot-hero">
-      <div class="hero-content">
-        <p class="pilot-eyebrow">Pilot Partnership &middot; One Spot Available</p>
-        <h1>Real wellbeing support. At no cost. For twelve weeks.</h1>
-        <p class="hero-description">
-          We are opening one spot for a small US-based team to experience the Still Willows wellbeing programme, completely free. No catch, no upsell. Just meaningful support for your people, and honest feedback for us.
-        </p>
-        <div class="hero-cta">
-          <a href="#express-interest" class="btn pilot-hero-btn">
-            Express Interest
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
+    <section class="pilot-hero">
+      <div class="pilot-hero-inner">
+        <div class="pilot-hero-text">
+          <p class="pilot-eyebrow">Pilot Partnership &middot; One Spot Available</p>
+          <h1>Real wellbeing support. At no cost. For twelve weeks.</h1>
+          <p class="pilot-hero-description">
+            We are opening one spot for a small US-based team to experience the Still Willows wellbeing programme, completely free. No catch, no upsell. Just meaningful support for your people, and honest feedback for us.
+          </p>
+          <div class="pilot-hero-cta">
+            <a href="#express-interest" class="btn pilot-hero-btn">
+              Express Interest
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="pilot-hero-image">
+          <img src="{{ '/assets/images/pilot-illustration.png' | relative_url }}" alt="Virtual coaching session illustration">
         </div>
       </div>
     </section>
@@ -109,6 +107,26 @@
       </div>
     </section>
 
+    <!-- Client Quotes -->
+    <section class="pilot-quotes">
+      <div class="container">
+        <div class="pilot-quotes-grid">
+          <div class="pilot-quote-card">
+            <p class="pilot-quote-text">"After our session I felt ready to have a conversation I had been putting off for a few days."</p>
+            <p class="pilot-quote-attr">Still Willows client</p>
+          </div>
+          <div class="pilot-quote-card">
+            <p class="pilot-quote-text">"I came to a hard realisation which changed my way of thinking. I realised the change needed to start with me."</p>
+            <p class="pilot-quote-attr">Still Willows client</p>
+          </div>
+          <div class="pilot-quote-card">
+            <p class="pilot-quote-text">"I could breathe again. Just having my thoughts and feelings heard made all the difference."</p>
+            <p class="pilot-quote-attr">Still Willows client</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Expression of Interest Form -->
     <section class="pilot-form-section" id="express-interest">
       <div class="container">
@@ -171,16 +189,6 @@
   </main>
 
   {% include footer.html %}
-
-  <script>
-    // Navigation scroll effect
-    const nav = document.getElementById('nav');
-    if (nav) {
-      window.addEventListener('scroll', () => {
-        nav.classList.toggle('scrolled', window.scrollY > 50);
-      });
-    }
-  </script>
 
   <script>
     (function () {
