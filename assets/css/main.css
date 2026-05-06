@@ -2179,3 +2179,165 @@ section {
     padding: 7rem 5% 3rem;
   }
 }
+
+/* ========================================
+   Pilot Page
+   ======================================== */
+.pilot-programme {
+  background: var(--cream-warm);
+}
+
+.pilot-programme .section-header {
+  max-width: 760px;
+}
+
+.pilot-ask {
+  background: var(--sage-pale);
+}
+
+.pilot-ask-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.pilot-ask-content h2 {
+  color: var(--charcoal);
+  margin-bottom: 1rem;
+}
+
+.pilot-ask-content > p {
+  margin-bottom: 2rem;
+}
+
+.pilot-ask-list {
+  list-style: none;
+}
+
+.pilot-ask-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: var(--charcoal);
+  line-height: 1.65;
+}
+
+.pilot-ask-list li::before {
+  content: '\2713';
+  color: var(--sage);
+  font-weight: 500;
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+
+.pilot-about {
+  background: var(--cream);
+}
+
+.pilot-form-section {
+  background: var(--cream-warm);
+}
+
+.pilot-form-wrapper {
+  max-width: 620px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--sage-pale);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--charcoal);
+  margin-bottom: 0.4rem;
+}
+
+.form-required {
+  color: var(--terracotta);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  background: var(--cream);
+  border: 1px solid var(--sage-pale);
+  border-radius: 10px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: var(--charcoal);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--sage);
+  box-shadow: 0 0 0 3px rgba(139, 154, 125, 0.12);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--stone);
+  font-weight: 300;
+}
+
+.form-group textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.form-group select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%238B9A7D' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  padding-right: 2.5rem;
+  cursor: pointer;
+}
+
+.form-submit {
+  margin-top: 0.75rem;
+}
+
+.pilot-thanks {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.pilot-thanks p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  font-style: italic;
+  color: var(--charcoal);
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .pilot-form-wrapper {
+    padding: 1.75rem;
+  }
+}
