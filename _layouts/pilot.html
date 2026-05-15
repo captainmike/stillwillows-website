@@ -25,12 +25,18 @@
 
     <!-- Hero -->
     <section class="pilot-hero">
+      <div class="pilot-logo-bar">
+        <a href="{{ '/' | relative_url }}" class="logo">
+          <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="{{ site.title }}" class="logo-img">
+          {{ site.title }}
+        </a>
+      </div>
       <div class="pilot-hero-inner">
         <div class="pilot-hero-text">
           <p class="pilot-eyebrow">One Pilot Underway &middot; One Spot Remaining</p>
           <h1>Real wellbeing support. At no cost. For twelve weeks.</h1>
           <p class="pilot-hero-description">
-            We are already working with our first pilot partner and opening one more spot for a small US-based team. Completely free, no catch, no upsell. Just meaningful support for your people, and honest feedback for us.
+            We are already working with our first pilot partner and opening one more spot for a small US-based team (typically 10 to 30 people, though we are open to slightly smaller or larger). Completely free, no catch, no upsell. Just meaningful support for your people, and honest feedback for us.
           </p>
           <div class="pilot-hero-cta">
             <a href="#express-interest" class="btn pilot-hero-btn">
@@ -98,8 +104,8 @@
     <section class="pilot-about">
       <div class="container">
         <div class="privacy-content">
-          <div class="privacy-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <div class="pilot-about-photo">
+            <img src="{{ '/assets/images/rizqa.jpg' | relative_url }}" alt="Rizqa Armien-Yang">
           </div>
           <h2>About Rizqa</h2>
           <p>I'm Rizqa, an occupational therapist and public health practitioner (BSc OT and MPH from UCT) with experience in mental health settings across Africa, Europe, and the United States, including a psychiatric hospital and a COVID isolation centre. Still Willows is non-clinical. This is coaching and wellbeing support, not therapy. I'm honest about that boundary and will always refer team members on if something needs more than I can offer.</p>
@@ -109,19 +115,61 @@
 
     <!-- Client Quotes -->
     <section class="pilot-quotes">
-      <div class="container">
+      <div class="pilot-quotes-inner">
+        <div class="pilot-quotes-header">
+          <span class="pilot-quotes-label">What Clients Say</span>
+        </div>
         <div class="pilot-quotes-grid">
           <div class="pilot-quote-card">
-            <p class="pilot-quote-text">"After our session I felt ready to have a conversation I had been putting off for a few days."</p>
-            <p class="pilot-quote-attr">Still Willows client</p>
+            <div class="pilot-quote-top">
+              <span class="pilot-quote-mark">&ldquo;</span>
+              <div class="pilot-quote-dots">
+                <span class="pilot-dot pilot-dot-active"></span>
+                <span class="pilot-dot"></span>
+                <span class="pilot-dot"></span>
+              </div>
+            </div>
+            <p class="pilot-quote-text">I'd never done anything like this before and was scared to book. But my colleague encouraged me, and I'm so glad I listened. The booking was easy, the session felt well-guided, and I could just come as I am.</p>
+            <div class="pilot-quote-footer">
+              <div class="pilot-quote-avatar">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              </div>
+              <span class="pilot-quote-attr">Still Willows Client</span>
+            </div>
           </div>
           <div class="pilot-quote-card">
-            <p class="pilot-quote-text">"I came to a hard realisation which changed my way of thinking. I realised the change needed to start with me."</p>
-            <p class="pilot-quote-attr">Still Willows client</p>
+            <div class="pilot-quote-top">
+              <span class="pilot-quote-mark">&ldquo;</span>
+              <div class="pilot-quote-dots">
+                <span class="pilot-dot"></span>
+                <span class="pilot-dot pilot-dot-active"></span>
+                <span class="pilot-dot"></span>
+              </div>
+            </div>
+            <p class="pilot-quote-text">I came to a hard realisation which changed my way of thinking. I realised the change needed to start with me.</p>
+            <div class="pilot-quote-footer">
+              <div class="pilot-quote-avatar">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              </div>
+              <span class="pilot-quote-attr">Still Willows Client</span>
+            </div>
           </div>
           <div class="pilot-quote-card">
-            <p class="pilot-quote-text">"I could breathe again. Just having my thoughts and feelings heard made all the difference."</p>
-            <p class="pilot-quote-attr">Still Willows client</p>
+            <div class="pilot-quote-top">
+              <span class="pilot-quote-mark">&ldquo;</span>
+              <div class="pilot-quote-dots">
+                <span class="pilot-dot"></span>
+                <span class="pilot-dot"></span>
+                <span class="pilot-dot pilot-dot-active"></span>
+              </div>
+            </div>
+            <p class="pilot-quote-text">I could breathe again. Just having my thoughts and feelings heard made all the difference.</p>
+            <div class="pilot-quote-footer">
+              <div class="pilot-quote-avatar">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              </div>
+              <span class="pilot-quote-attr">Still Willows Client</span>
+            </div>
           </div>
         </div>
       </div>
