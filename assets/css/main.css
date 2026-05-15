@@ -2260,9 +2260,11 @@ section {
 
 .pilot-hero-image img {
   width: 100%;
-  height: auto;
+  max-height: 420px;
+  object-fit: cover;
+  object-position: center;
   display: block;
-  border-radius: 8px;
+  border-radius: 12px;
 }
 
 /* ========================================
