@@ -2271,8 +2271,8 @@ section {
    Pilot Page - About Photo
    ======================================== */
 .pilot-about-photo {
-  width: 80px;
-  height: 80px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   overflow: hidden;
   margin: 0 auto 1.5rem;
@@ -2296,7 +2296,7 @@ section {
 .pilot-quotes-inner {
   max-width: 1140px;
   margin: 0 auto;
-  background: #3D5147;
+  background: #526B61;
   border-radius: 20px;
   padding: 3rem;
 }
