@@ -2188,7 +2188,18 @@ section {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 4rem 5%;
+  padding: 5rem 5% 4rem;
+  position: relative;
+}
+
+.pilot-logo-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1.25rem 5%;
+  display: flex;
+  justify-content: center;
 }
 
 .pilot-hero-inner {
@@ -2255,44 +2266,145 @@ section {
 }
 
 /* ========================================
+   Pilot Page - About Photo
+   ======================================== */
+.pilot-about-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 1.5rem;
+}
+
+.pilot-about-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+/* ========================================
    Pilot Page - Client Quotes
    ======================================== */
 .pilot-quotes {
-  background: var(--cream);
+  background: #3D5147;
+  padding: 6rem 5%;
+}
+
+.pilot-quotes-inner {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.pilot-quotes-header {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.pilot-quotes-header::before,
+.pilot-quotes-header::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.pilot-quotes-label {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+  white-space: nowrap;
 }
 
 .pilot-quotes-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.25rem;
 }
 
 .pilot-quote-card {
-  background: white;
-  border: 1px solid var(--sage-pale);
-  border-radius: 16px;
-  padding: 2rem;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(159, 225, 203, 0.2);
+  border-radius: 12px;
+  padding: 1.75rem;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.25rem;
+}
+
+.pilot-quote-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.pilot-quote-mark {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.5rem;
+  line-height: 1;
+  color: #5DCAA5;
+}
+
+.pilot-quote-dots {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-top: 0.4rem;
+}
+
+.pilot-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(93, 202, 165, 0.3);
+}
+
+.pilot-dot-active {
+  width: 18px;
+  border-radius: 100px;
+  background: #5DCAA5;
 }
 
 .pilot-quote-text {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 1.2rem;
-  font-style: italic;
-  line-height: 1.65;
-  color: var(--charcoal);
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.88);
   flex: 1;
+}
+
+.pilot-quote-footer {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(93, 202, 165, 0.2);
+}
+
+.pilot-quote-avatar {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: rgba(93, 202, 165, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5DCAA5;
+  flex-shrink: 0;
 }
 
 .pilot-quote-attr {
   font-family: 'Outfit', sans-serif;
-  font-size: 0.75rem;
+  font-size: 0.68rem;
   font-weight: 500;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--sage);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 @media (max-width: 1024px) {
@@ -2303,12 +2415,6 @@ section {
 
   .pilot-hero-image {
     display: none;
-  }
-
-  .pilot-quotes-grid {
-    grid-template-columns: 1fr;
-    max-width: 480px;
-    margin: 0 auto;
   }
 }
 
