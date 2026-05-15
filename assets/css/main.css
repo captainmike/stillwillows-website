@@ -2199,7 +2199,7 @@ section {
   right: 0;
   padding: 1.25rem 5%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .pilot-hero-inner {
