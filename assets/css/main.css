@@ -2199,7 +2199,7 @@ section {
   right: 0;
   padding: 1.25rem 5%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .pilot-hero-inner {
@@ -2260,9 +2260,11 @@ section {
 
 .pilot-hero-image img {
   width: 100%;
-  height: auto;
+  max-height: 420px;
+  object-fit: cover;
+  object-position: center;
   display: block;
-  border-radius: 8px;
+  border-radius: 12px;
 }
 
 /* ========================================
@@ -2287,13 +2289,16 @@ section {
    Pilot Page - Client Quotes
    ======================================== */
 .pilot-quotes {
-  background: #3D5147;
-  padding: 6rem 5%;
+  background: var(--cream-warm);
+  padding: 4rem 5%;
 }
 
 .pilot-quotes-inner {
   max-width: 1140px;
   margin: 0 auto;
+  background: #3D5147;
+  border-radius: 20px;
+  padding: 3rem;
 }
 
 .pilot-quotes-header {
@@ -2372,8 +2377,8 @@ section {
 
 .pilot-quote-text {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 1.05rem;
-  line-height: 1.75;
+  font-size: 15px;
+  line-height: 1.8;
   color: rgba(255, 255, 255, 0.88);
   flex: 1;
 }
