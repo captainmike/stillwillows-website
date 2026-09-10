@@ -1,0 +1,50 @@
+<div id="announcement-bar" class="announcement-bar">
+  <a href="{{ '/pilot' | relative_url }}" class="announcement-bar-link">
+    <span>We&rsquo;re currently running a free 12-week pilot partnership for small teams</span>
+    <span aria-hidden="true">&rarr;</span>
+    <span class="announcement-bar-cta">Learn more</span>
+  </a>
+  <button type="button" class="announcement-bar-close" aria-label="Dismiss announcement">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+</div>
+<script>
+  (function () {
+    var STORAGE_KEY = 'sw_announcement_dismissed';
+    var bar = document.getElementById('announcement-bar');
+    if (!bar) return;
+
+    var root = document.documentElement;
+    function setOffset(px) {
+      root.style.setProperty('--announce-h', px + 'px');
+    }
+
+    var alreadyDismissed = false;
+    try {
+      alreadyDismissed = localStorage.getItem(STORAGE_KEY) === '1';
+    } catch (e) {}
+
+    if (alreadyDismissed) {
+      bar.style.display = 'none';
+      setOffset(0);
+      return;
+    }
+
+    function updateOffset() {
+      setOffset(bar.offsetHeight);
+    }
+    updateOffset();
+    window.addEventListener('resize', updateOffset);
+
+    var closeBtn = bar.querySelector('.announcement-bar-close');
+    closeBtn.addEventListener('click', function () {
+      window.removeEventListener('resize', updateOffset);
+      bar.classList.add('is-dismissed');
+      setOffset(0);
+      try { localStorage.setItem(STORAGE_KEY, '1'); } catch (e) {}
+      window.setTimeout(function () {
+        bar.style.display = 'none';
+      }, 350);
+    });
+  })();
+</script>
