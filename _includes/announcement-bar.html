@@ -14,11 +14,6 @@
     var bar = document.getElementById('announcement-bar');
     if (!bar) return;
 
-    var root = document.documentElement;
-    function setOffset(px) {
-      root.style.setProperty('--announce-h', px + 'px');
-    }
-
     var alreadyDismissed = false;
     try {
       alreadyDismissed = localStorage.getItem(STORAGE_KEY) === '1';
@@ -26,25 +21,27 @@
 
     if (alreadyDismissed) {
       bar.style.display = 'none';
-      setOffset(0);
       return;
     }
 
-    function updateOffset() {
-      setOffset(bar.offsetHeight);
+    function lockHeight() {
+      bar.style.height = bar.scrollHeight + 'px';
     }
-    updateOffset();
-    window.addEventListener('resize', updateOffset);
+    lockHeight();
+    window.addEventListener('resize', lockHeight);
 
     var closeBtn = bar.querySelector('.announcement-bar-close');
     closeBtn.addEventListener('click', function () {
-      window.removeEventListener('resize', updateOffset);
-      bar.classList.add('is-dismissed');
-      setOffset(0);
+      window.removeEventListener('resize', lockHeight);
+      lockHeight();
+      requestAnimationFrame(function () {
+        bar.classList.add('is-dismissed');
+        bar.style.height = '0px';
+      });
       try { localStorage.setItem(STORAGE_KEY, '1'); } catch (e) {}
       window.setTimeout(function () {
         bar.style.display = 'none';
-      }, 350);
+      }, 400);
     });
   })();
 </script>
