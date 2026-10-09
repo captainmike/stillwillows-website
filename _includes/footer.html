@@ -1,39 +1,5 @@
-<footer class="site-footer">
-  <div class="footer-content">
-    <div class="footer-brand">
-      <a href="{{ '/' | relative_url }}" class="logo">
-        <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="{{ site.title }}" class="logo-img">
-        {{ site.title }}
-      </a>
-      <div class="footer-tagline">{{ site.tagline }}</div>
-    </div>
-    <div class="footer-col">
-      <h4>Navigate</h4>
-      <a href="{{ '/about' | relative_url }}">About</a>
-      <a href="{{ '/services' | relative_url }}">Services</a>
-      <a href="{{ '/blog' | relative_url }}">Blog</a>
-      <a href="{{ '/faq' | relative_url }}">FAQ</a>
-      <a href="{{ '/contact' | relative_url }}">Contact</a>
-    </div>
-    <div class="footer-col">
-      <h4>Services</h4>
-      <a href="{{ '/services' | relative_url }}#coaching">1:1 Coaching</a>
-      <a href="{{ '/services' | relative_url }}#workshops">Workshops</a>
-      <a href="{{ '/services' | relative_url }}#packages">Packages</a>
-      <a href="{{ '/services' | relative_url }}#individuals">For Individuals</a>
-    </div>
-    <div class="footer-col">
-      <h4>Connect</h4>
-      <a href="mailto:{{ site.email }}">{{ site.email }}</a>
-      <a href="{{ '/contact' | relative_url }}">Book a Discovery Call</a>
-    </div>
-  </div>
-
-  <div style="padding: 1.75rem 5% 0.25rem; margin-top: 2.5rem; border-top: 1px solid rgba(255,255,255,0.1); text-align:center; font-family: 'Outfit', sans-serif;">
-    <div style="font-size: 0.85rem; color: rgba(255,255,255,0.5) !important; letter-spacing: 0.05em; max-width: 520px; margin: 0 auto 0.85rem; line-height: 1.5;">
-      Subscribe to our monthly newsletter here for reflections and practical suggestions to improve wellbeing.
-    </div>
-    <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 0.6rem; max-width: 1140px; margin: 0 auto;">
+{% if page.layout == "post" %}{% assign is_post = true %}{% else %}{% assign is_post = false %}{% endif %}
+{% capture newsletter_form %}
       <!-- REAL ZOHO QUICK FORM WIDGET — this is the only place this exact code should appear on any given page -->
       <!--Zoho Campaigns Web-Optin Form's Header Code Starts Here-->
       <script type="text/javascript" src="https://zgnp-zngp.maillist-manage.com/js/optin.min.js" onload="setupSF('sf3z77019f59b46cf360de0cbc9ef70dc48e3ce5692afe3b492f897adca3319764c7','ZCFORMVIEW',false,'light',false,'0')"></script>
@@ -119,8 +85,62 @@
       </div>
       <input type="hidden" id="signupFormType" value="QuickForm_Horizontal">
       <!--Zoho Campaigns Web-Optin Form Ends Here-->
+{% endcapture %}
+
+<footer class="site-footer">
+  {% unless is_post %}
+  <div class="footer-newsletter">
+    <div class="footer-newsletter-text">
+      <h3>The Still Willows Newsletter</h3>
+      <p>Subscribe to our monthly newsletter here for reflections and practical suggestions to improve wellbeing.</p>
+    </div>
+    <div class="footer-newsletter-form">
+{{ newsletter_form }}
     </div>
   </div>
+  {% endunless %}
+
+  <div class="footer-content">
+    <div class="footer-brand">
+      <a href="{{ '/' | relative_url }}" class="logo">
+        <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="{{ site.title }}" class="logo-img">
+        {{ site.title }}
+      </a>
+      <div class="footer-tagline">{{ site.tagline }}</div>
+    </div>
+    <div class="footer-col">
+      <h4>Navigate</h4>
+      <a href="{{ '/about' | relative_url }}">About</a>
+      <a href="{{ '/services' | relative_url }}">Services</a>
+      <a href="{{ '/blog' | relative_url }}">Blog</a>
+      <a href="{{ '/faq' | relative_url }}">FAQ</a>
+      <a href="{{ '/contact' | relative_url }}">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <a href="{{ '/services' | relative_url }}#coaching">1:1 Coaching</a>
+      <a href="{{ '/services' | relative_url }}#workshops">Workshops</a>
+      <a href="{{ '/services' | relative_url }}#packages">Packages</a>
+      <a href="{{ '/services' | relative_url }}#individuals">For Individuals</a>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+      <a href="{{ '/contact' | relative_url }}">Book a Discovery Call</a>
+    </div>
+  </div>
+
+  {% if is_post %}
+  <div style="padding: 1.75rem 5% 0.25rem; margin-top: 2.5rem; border-top: 1px solid rgba(255,255,255,0.1); text-align:center; font-family: 'Outfit', sans-serif;">
+    <div style="font-size: 0.85rem; color: rgba(255,255,255,0.5) !important; letter-spacing: 0.05em; max-width: 520px; margin: 0 auto 0.85rem; line-height: 1.5;">
+      Subscribe to our monthly newsletter here for reflections and practical suggestions to improve wellbeing.
+    </div>
+    <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 0.6rem; max-width: 1140px; margin: 0 auto;">
+{{ newsletter_form }}
+    </div>
+  </div>
+
+  {% endif %}
 
   <div class="footer-bottom">
     <span>&copy; {{ 'now' | date: '%Y' }} Still Willows LLC. All rights reserved.</span>
