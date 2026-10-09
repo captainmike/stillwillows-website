@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to Support Your Team's Mental Health Without Overstepping"
+title: "Supporting Someone Through a Hard Stretch"
 date: 2026-10-09
 excerpt: "If you manage people, you have probably worried about saying nothing or saying too much. That worry is a good sign. Here is how to care well and stay in your lane."
 ---
